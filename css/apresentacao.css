@@ -1,0 +1,140 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#apresenta {
+    width: 59%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 90vh;
+}
+
+#apresenta h1 {
+    color: #000000;
+}
+
+.imgs {
+    height: 12vh;
+    width: 7vw;
+    animation: flutuar 3s ease-in-out infinite;
+    filter: drop-shadow(10px 30px 10px rgba(0, 0, 0, 0.397))
+}
+
+.text {
+    display: flex;
+    margin: 5px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    justify-content: end;
+    width: 80%;
+    gap: 10px;
+    height: 23vh;
+
+}
+
+p {
+    font-size: 2.2vh;
+    width: 80%;
+    margin-right: 0;
+    padding: 10px;
+    box-sizing: 30px;
+    margin: 0 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#cod_font {
+    bottom: 30px;
+
+    width: 100%;
+    height: 12vh;
+    display: block;
+    border-radius: 30px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.color {
+    background: linear-gradient(110deg, rgb(102, 206, 102), rgb(255, 217, 0), rgb(148, 111, 218), rgb(85, 178, 255), red);
+    width: 80%;
+    border-radius: 30px;
+    margin: 0 auto;
+    z-index: 99;
+    padding: 3px;
+    box-sizing: border-box;
+    background-size: 400% 400%;
+    animation: fundo 5s ease-in-out infinite alternate;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
+}
+
+@keyframes fundo {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+
+    }
+
+    100% {
+        background-position: 0% 25%;
+    }
+}
+
+.info {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: #fff;
+    padding: 5px;
+    height: 20%;
+}
+
+.n-pessoa {
+    text-align: center;
+    padding: 50px;
+    width: 90%;
+    position: relative;
+
+}
+
+.n-pessoa:last-child {
+    border-left: rgb(99, 67, 124) 2px solid;
+}
+
+#present_k,
+#presentes {
+
+    text-align: center;
+    font-size: 8vh;
+    color: rgb(162, 2, 255);
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    right: 100px;
+}

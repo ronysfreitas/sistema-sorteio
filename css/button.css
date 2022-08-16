@@ -1,0 +1,49 @@
+.btn_conteiner {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0 22px;
+    background: rgb(162, 2, 255);
+    border: 2px solid rgb(162, 2, 255);
+    border-radius: 20px;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.button:hover {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 5px 5px 0px rgba(55, 3, 86, 0.4);
+}
+
+td {
+    font-size: 20px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: 1px solid #333;
+    width: 48px;
+    height: 48px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}

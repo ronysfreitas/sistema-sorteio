@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/apresentacao.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/button.css">
+</head>
+
+
+<body>
+    <div id="menu">
+
+
+        <h1>Sorteio</h1>
+        <div class="info">
+            <div class="n-pessoa">
+                <h2>Número de pessoas presentes</h2>
+                <br><br>
+                <div id="presentes">
+                    0
+                </div>
+            </div>
+            <div class="n-pessoa">
+                <h2>Número de sorteios realizados</h2>
+                <br><br>
+                <div id="present_k">
+                    0
+                </div>
+
+            </div>
+
+        </div>
+        <div class="lista">
+            <ul id="add_pessoa">
+
+            </ul>
+        </div>
+
+        <div class="btn_conteiner">
+            <button class="button" id="Inserir"> Inserir</button>
+            <button class="button" id="Sortear"> Sortear</button>
+        </div>
+
+    </div>
+
+
+    <div id="apresenta">
+        <h1 id="titulo">Desenvolvimento WEB</h1>
+
+
+        <div class="text">
+            <img src="img/html.png" alt="HTML logo" class="imgs" onclick="atualizar()">
+            <p>
+                HTML é a base de uma página WEB, como esqueleto de um corpo.
+                Ele define a estruturação de todos os elementos (títulos,
+                parágrafos, divisorias, imagens, tabelas, etc.). Ele demarca muito
+                bem uma página WEB, com início, meio e fim. Contudo, o HTML
+                não se preocupa com beleza, tudo fica apenas um "preto e braco".
+                E é ai que entra o CSS.
+            </p>
+        </div>
+        <div class="text">
+
+            <p>
+                O CSS é o que dá estilo aos elementos, como a roupa e adereços
+                que uma pessoa utiliza. O CSS define cores, tamanhos, efeitos visuais
+                e, ao fim, deixa a página mais atrativa e muito, muito mais
+                bonita. Ainda assim, somente com CSS a página continuará
+                engessada, sem movimento, sem vida. Chegamos então ao Javascript.
+
+            </p>
+            <img src="img/css.png" alt="CSS logo" class="imgs">
+        </div>
+        <div class="text">
+            <img src="img/js.png" alt="JS logo" class="imgs" id="imgdojs">
+            <p>
+                O JavaScript é o que dá movimento e ação às páginas WEB,
+                o cérebro do corpo. Ele é praticamente o espírito, que dá a vida
+                ao corpo. Com o JavaScript pode-se criar interações, animações,
+                gerando dinamismo à sua página e tudo ficará super atrativo
+                para os usuários.
+
+            </p>
+        </div>
+
+        <div class="color">
+            <div id="cod_font">
+                <table style="margin:0 auto;padding-top: 30px;text-align: center;" width="80%">
+                    <tr>
+                        <td>Fundo</td>
+                        <td>Texto</td>
+                        <td>Título</td>
+                    </tr>
+                    <tr>
+                        <td><input type="color" onchange="cor(this, 'f')" /></td>
+                        <td><input type="color" onchange="cor(this, 'te')" value="#ffffff" /></td>
+                        <td><input type="color" onchange="cor(this, 'ti')" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="forms">
+
+        <form id="formSorteio">
+            <select id="sorteio">
+                <option value="DevWEB - Caixinha de Bis">DevWEB - Caixinha de Bis</option>
+                <option value="Verde Saúde - KIT Caneca">Verde Saúde - KIT Caneca</option>
+                <option value="PriArt - Arranjo de Flores">PriArt - Arranjo de Flores</option>
+            </select>
+        </form>
+
+        <form id="form">
+            <span>Preencha o formulário abaixo com os dados solicitados e clique em CADASTRAR.</span>
+            <br /><br />
+            <input type="text" id="nome" placeholder="Nome:">
+            <input type="hidden" value="SEM" id="profissao" placeholder="Profissão: ">
+            <input type="text" id="telefone" placeholder="Telefone: ">
+            <select id="est_visit">
+                <option value="0">Visitante</option>
+                <option value="1">Estudante</option>
+            </select>
+            <br /><br />
+            <input id="kahoot" type="checkbox" checked><span> Vou participar do Kahoot</span>
+
+        </form>
+    </div>
+
+    <style>
+        input[type="text"],
+        select {
+            width: 80%;
+            padding: 15px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        select {
+            width: 88%;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    </style>
+
+    <script src="plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="plugins/axios/axios.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

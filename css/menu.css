@@ -1,0 +1,66 @@
+h1 {
+    font-size: 7vh;
+    margin: 10px auto;
+    display: block;
+    width: max-content;
+    z-index: 99;
+    color: #ffffff;
+}
+
+#menu {
+    position: fixed;
+    width: 40%;
+    top: 0;
+    background: linear-gradient(45deg, #3a314e, #301a4d);
+    bottom: 0;
+
+}
+
+.lista {
+    width: 93%;
+    height: 50%;
+    overflow: auto;
+    margin: 10px auto;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.lista::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(57, 30, 153);
+    border-radius: 2px;
+}
+
+li {
+    padding: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-right: none;
+    font-size: 20px;
+    padding-left: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: rgb(162, 2, 255);
+    color: #fff;
+}
+
+.forms {
+    display: none;
+}
+
+h2 {
+    font-size: 1.7vh;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.671);
+    margin-top: -30px
+}
